@@ -4,4 +4,17 @@
     <string name="fitness">Fitness</string>
     <string name="skincare">Skin Care</string>
     <string name="cosmetic">Cosmetic</string>
+    <string name="daily_task">Daily Tasks</string>
+    <string name="diet">Diet</string>
+    <string name="exercise">Exercise</string>
+    <string name="done">Done</string>
+
+    <string name="task1">Avoid sugary drinks and fruit juice</string>
+    <string name="task2">Drink water a half hour before meals</string>
+    <string name="task3">Eat your food slowly</string>
+    <string name="task4">Weigh yourself every day</string>
+    <string name="task5">Get a good night\'s sleep, every night</string>
+    <string name="task6">Limit high fat, highly processed foods</string>
+    <string name="task7">Ensure regular exercise every day</string>
+    <string name="task8">Increase your baseline activity level</string>
 </resources>

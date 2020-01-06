@@ -1,11 +1,13 @@
 package com.example.bottombarnavigation
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.example.bottombarnavigation.Slim.SlimMenu
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.fragment.*
@@ -38,9 +40,8 @@ class MainActivity : AppCompatActivity() {
                 return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_fitness -> {
-                val fragment = FitnessFragment()
-                supportFragmentManager.beginTransaction().replace(R.id.container, fragment, fragment.javaClass.getSimpleName())
-                    .commit()
+                val intent : Intent = Intent(this,SlimMenu::class.java)
+                startActivity(intent)
                 return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_skincare -> {
@@ -77,6 +78,7 @@ class MainActivity : AppCompatActivity() {
             super.onActivityCreated(savedInstanceState)
             textViewCommon.text = "Fitness Fragment"
             commonLayout.setBackgroundColor(resources.getColor(android.R.color.holo_green_light))
+
         }
     }
 
