@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_outfit"
+        android:icon="@drawable/logo_outfit"
+        android:title="@string/outfit"/>
+    <item
+        android:id="@+id/navigation_fitness"
+        android:icon="@drawable/logo_fitness"
+        android:title="@string/fitness"/>
+    <item
+        android:id="@+id/navigation_skincare"
+        android:icon="@drawable/logo_skincare"
+        android:title="@string/skincare"/>
+
+    <item
+        android:id="@+id/navigation_cosmetic"
+        android:icon="@drawable/logo_cosmetic"
+        android:title="@string/cosmetic"/>
+
+</menu>

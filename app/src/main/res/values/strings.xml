@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">BottomBarNavigation</string>
+    <string name="outfit">Outfit</string>
+    <string name="fitness">Fitness</string>
+    <string name="skincare">Skin Care</string>
+    <string name="cosmetic">Cosmetic</string>
+</resources>
