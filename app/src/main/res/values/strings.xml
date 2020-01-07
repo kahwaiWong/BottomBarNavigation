@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">BottomBarNavigation</string>
+    <string name="app_name">Beau4u</string>
     <string name="outfit">Outfit</string>
     <string name="fitness">Fitness</string>
     <string name="skincare">Skin Care</string>
@@ -51,4 +51,53 @@
     <string name="exercise_60minutes">60 Minutes</string>
 
     <string name="start">Start</string>
+
+    <!-- Dearest Kah Wai -->
+    <string name="lip1Detail">
+        Product Name: HOLD LIVE 501\n
+        Color: Tea Brown\n\n
+        Product Name: HOLD LIVE 502\n
+        Color: Maple Leaf\n\n
+        Product Name: HOLD LIVE 503\n
+        Color: Tomato Leaf\n\n
+        Product Name: HOLD LIVE 504\n
+        Color: Fancy Ruby\n\n
+        Product Name: HOLD LIVE 505\n
+        Color: Choco Jam\n\n
+        Benefit of product :\n
+        - Rich and Pigmented\n
+        - Long-lasting\n
+        - Lightweight
+    </string>
+    <string name="eye">Eyes</string>
+    <string name="lip">Lips</string>
+    <string name="foundation">Foundation</string>
+    <string name="eye1Detail">
+        Perfect Diary x British Museum\n
+        *Fantasias Eye Shadow Palette*\n\n
+
+        1. Cupid of Love \n
+        2. Maria \n\n
+
+        Buy now at official website : www.perfectdiary.com\n
+        at $ 49.40.
+
+    </string>
+
+    <!-- Yap Hui Wen-->
+    <string name="casual">Casual</string>
+    <string name="dating">Dating</string>
+    <string name="formal">Formal</string>
+    <string name="dinner">Dinner</string>
+    <string name="casualLongDesc">Long Skirt</string>
+    <string name="casualShortDesc">Short Skirt</string>
+    <string name="casualDesc">The OOTD of youngs.\n
+    Please scroll left to view more casual outfit...</string>
+    <string name="datingDesc">The OOTD of youngs.\n
+    Please scroll left to view more dating outfit...</string>
+    <string name="dinnerDesc">The OOTD of youngs.\n
+    Please scroll left to view more dinner outfit...</string>
+    <string name="formalDesc">The OOTD of youngs.\n
+    Please scroll left to view more formal outfit...</string>
+
 </resources>

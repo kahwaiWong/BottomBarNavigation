@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Outfit.DatingActivity">
+
+    <TextView
+        android:id="@+id/textViewDating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dating"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:fontFamily="sans-serif-smallcaps"
+        app:layout_constraintBottom_toTopOf="@+id/ScrollView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/ScrollView"
+        android:layout_width="387dp"
+        android:layout_height="655dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageViewDating1"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:contentDescription="@string/casual"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/image_dating6" />
+
+            <ImageView
+                android:id="@+id/imageViewDating2"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:contentDescription="@string/casual"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewDating1"
+                app:srcCompat="@drawable/image_dating5" />
+
+            <ImageView
+                android:id="@+id/imageViewDating3"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:contentDescription="@string/casual"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewDating2"
+                app:srcCompat="@drawable/image_dating3" />
+
+            <ImageView
+                android:id="@+id/imageViewDating4"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:contentDescription="@string/casual"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewDating3"
+                app:srcCompat="@drawable/image_dating4" />
+
+            <ImageView
+                android:id="@+id/imageViewDating5"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:contentDescription="@string/casual"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewDating4"
+                app:srcCompat="@drawable/image_dating2" />
+
+            <TextView
+                android:id="@+id/textViewDating1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/casualLongDesc"
+                android:textSize="18sp"
+                app:fontFamily="sans-serif-smallcaps"
+                app:layout_constraintBottom_toBottomOf="@+id/imageViewDating1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageViewDating1"
+                app:layout_constraintTop_toTopOf="@+id/imageViewDating1" />
+
+            <TextView
+                android:id="@+id/textViewDating2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/casualShortDesc"
+                android:textSize="18sp"
+                app:fontFamily="sans-serif-smallcaps"
+                app:layout_constraintBottom_toBottomOf="@+id/imageViewDating2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageViewDating2"
+                app:layout_constraintTop_toTopOf="@+id/imageViewDating2" />
+
+            <TextView
+                android:id="@+id/textViewDating3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/casualShortDesc"
+                android:textSize="18sp"
+                app:fontFamily="sans-serif-smallcaps"
+                app:layout_constraintBottom_toBottomOf="@+id/imageViewDating3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageViewDating3"
+                app:layout_constraintTop_toTopOf="@+id/imageViewDating3" />
+
+            <TextView
+                android:id="@+id/textViewDating4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/casualLongDesc"
+                android:textSize="18sp"
+                app:fontFamily="sans-serif-smallcaps"
+                app:layout_constraintBottom_toBottomOf="@+id/imageViewDating4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageViewDating4"
+                app:layout_constraintTop_toTopOf="@+id/imageViewDating4" />
+
+            <TextView
+                android:id="@+id/textViewDating5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/casualShortDesc"
+                android:textSize="18sp"
+                app:fontFamily="sans-serif-smallcaps"
+                app:layout_constraintBottom_toBottomOf="@+id/imageViewDating5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageViewDating5"
+                app:layout_constraintTop_toTopOf="@+id/imageViewDating5" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -14,7 +14,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:text="Countdown Exercise"
-        android:textColor="#FF0000"
+        android:textColor="@android:color/background_dark"
         android:textSize="30dp"
         android:textStyle="bold"></TextView>
 
@@ -48,16 +48,16 @@
         android:text="Stop" />
 
     <Chronometer
+        android:id="@+id/simpleChronometer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/simpleChronometer"
         android:layout_below="@id/button_restart"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:background="#000"
         android:gravity="center"
         android:padding="10dp"
-        android:textColor="#f00"
+        android:textColor="@android:color/background_light"
         android:textStyle="bold"></Chronometer>
 
 

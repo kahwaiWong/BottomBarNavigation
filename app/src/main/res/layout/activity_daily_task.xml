@@ -7,7 +7,19 @@
     android:layout_marginLeft="5dp"
     android:layout_height="match_parent"
     tools:context=".Slim.DailyTask">
-
+    <TextView
+        android:id="@+id/textViewOutfit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|center_horizontal"
+        android:text="@string/daily_task"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:fontFamily="sans-serif-smallcaps"
+        app:layout_constraintBottom_toTopOf="@+id/ScrollView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -129,6 +141,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:text=""
+                android:textColorLink="@android:color/holo_red_light"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/txt_task1"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -139,6 +152,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
                 android:text=""
+                android:textColorLink="@android:color/holo_red_light"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/txt_task1"
                 app:layout_constraintTop_toBottomOf="@+id/checkBox_done1" />
@@ -149,6 +163,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:text=""
+                android:textColorLink="@android:color/holo_red_light"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="@+id/guideline2"
                 app:layout_constraintTop_toBottomOf="@+id/checkBox_done2" />
@@ -159,6 +174,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
                 android:text=""
+                android:textColorLink="@android:color/holo_red_light"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="@+id/guideline2"
                 app:layout_constraintTop_toBottomOf="@+id/checkBox_done3" />
@@ -169,6 +185,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:text=""
+                android:textColorLink="@android:color/holo_red_light"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="@+id/guideline2"
                 app:layout_constraintTop_toBottomOf="@+id/checkBox_done6" />
@@ -179,6 +196,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
                 android:text=""
+                android:textColorLink="@android:color/holo_red_light"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="@+id/guideline2"
                 app:layout_constraintTop_toBottomOf="@+id/checkBox_done5" />
@@ -189,6 +207,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:text=""
+                android:textColorLink="@android:color/holo_red_light"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="@+id/guideline2"
                 app:layout_constraintTop_toBottomOf="@+id/checkBox_done4" />
@@ -199,6 +218,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
                 android:text=""
+                android:textColorLink="@android:color/holo_red_light"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/txt_task8"
                 app:layout_constraintTop_toBottomOf="@+id/checkBox_done7" />
@@ -220,7 +240,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
+                android:background="@android:color/holo_red_light"
                 android:text="@string/done"
+                android:textColor="@android:color/background_dark"
                 app:layout_constraintEnd_toStartOf="@+id/guideline2"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/txt_task8" />

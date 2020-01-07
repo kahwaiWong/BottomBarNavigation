@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Outfit.OutfitMenu">
+
+    <TextView
+        android:id="@+id/textViewOutfit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/outfit"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:fontFamily="sans-serif-smallcaps"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewCasualCat"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="60dp"
+        android:clickable="true"
+        android:contentDescription="@string/casual"
+        android:focusable="true"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewDatingCat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/image_casual6" />
+
+    <ImageView
+        android:id="@+id/imageViewDatingCat"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:clickable="true"
+        android:contentDescription="@string/dating"
+        android:focusable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/image_dating5" />
+
+    <ImageView
+        android:id="@+id/imageViewFormalCat"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="32dp"
+        android:clickable="true"
+        android:contentDescription="@string/formal"
+        android:focusable="true"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewDinnerCat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCasual"
+        app:srcCompat="@drawable/image_formal6" />
+
+    <ImageView
+        android:id="@+id/imageViewDinnerCat"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:clickable="true"
+        android:contentDescription="@string/dinner"
+        android:focusable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonDating"
+        app:srcCompat="@drawable/image_dinner6" />
+
+    <Button
+        android:id="@+id/buttonCasual"
+        style="@android:style/Widget.Holo.Light.Button.Toggle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/casual"
+        android:typeface="serif"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewCasualCat"
+        app:layout_constraintStart_toStartOf="@+id/imageViewCasualCat"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewCasualCat" />
+
+    <Button
+        android:id="@+id/buttonDating"
+        style="@android:style/Widget.Holo.Light.Button.Toggle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/dating"
+        android:typeface="serif"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewDatingCat"
+        app:layout_constraintStart_toStartOf="@+id/imageViewDatingCat"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewDatingCat" />
+
+    <Button
+        android:id="@+id/buttonFormal"
+        style="@android:style/Widget.Holo.Light.Button.Toggle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/formal"
+        android:typeface="serif"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewFormalCat"
+        app:layout_constraintStart_toStartOf="@+id/imageViewFormalCat"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewFormalCat" />
+
+    <Button
+        android:id="@+id/buttonDinner"
+        style="@android:style/Widget.Holo.Light.Button.Toggle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/dinner"
+        android:typeface="serif"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewDinnerCat"
+        app:layout_constraintStart_toStartOf="@+id/imageViewDinnerCat"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewDinnerCat" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

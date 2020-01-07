@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Outfit.FormalActivity">
+
+    <TextView
+        android:id="@+id/textViewFormal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/formal"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:fontFamily="sans-serif-smallcaps"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/ScrollView"
+        android:layout_width="387dp"
+        android:layout_height="655dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFormal">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageViewFormal1"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:contentDescription="@string/casual"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/image_formal6" />
+
+            <ImageView
+                android:id="@+id/imageViewFormal2"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:contentDescription="@string/casual"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewFormal1"
+                app:srcCompat="@drawable/image_formal5" />
+
+            <ImageView
+                android:id="@+id/imageViewFormal3"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:contentDescription="@string/casual"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewFormal2"
+                app:srcCompat="@drawable/image_formal3" />
+
+            <ImageView
+                android:id="@+id/imageViewFormal4"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:contentDescription="@string/casual"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewFormal3"
+                app:srcCompat="@drawable/image_formal4" />
+
+            <ImageView
+                android:id="@+id/imageViewFormal5"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:contentDescription="@string/casual"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewFormal4"
+                app:srcCompat="@drawable/image_formal2" />
+
+            <TextView
+                android:id="@+id/textViewFormal1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/casualLongDesc"
+                android:textSize="18sp"
+                app:fontFamily="sans-serif-smallcaps"
+                app:layout_constraintBottom_toBottomOf="@+id/imageViewFormal1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageViewFormal1"
+                app:layout_constraintTop_toTopOf="@+id/imageViewFormal1" />
+
+            <TextView
+                android:id="@+id/textViewFormal2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/casualLongDesc"
+                android:textSize="18sp"
+                app:fontFamily="sans-serif-smallcaps"
+                app:layout_constraintBottom_toBottomOf="@+id/imageViewFormal2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageViewFormal2"
+                app:layout_constraintTop_toTopOf="@+id/imageViewFormal2" />
+
+            <TextView
+                android:id="@+id/textViewFormal3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/casualLongDesc"
+                android:textSize="18sp"
+                app:fontFamily="sans-serif-smallcaps"
+                app:layout_constraintBottom_toBottomOf="@+id/imageViewFormal3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageViewFormal3"
+                app:layout_constraintTop_toTopOf="@+id/imageViewFormal3" />
+
+            <TextView
+                android:id="@+id/textViewFormal4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/casualShortDesc"
+                android:textSize="18sp"
+                app:fontFamily="sans-serif-smallcaps"
+                app:layout_constraintBottom_toBottomOf="@+id/imageViewFormal4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageViewFormal4"
+                app:layout_constraintTop_toTopOf="@+id/imageViewFormal4" />
+
+            <TextView
+                android:id="@+id/textViewFormal5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/casualShortDesc"
+                android:textSize="18sp"
+                app:fontFamily="sans-serif-smallcaps"
+                app:layout_constraintBottom_toBottomOf="@+id/imageViewFormal5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageViewFormal5"
+                app:layout_constraintTop_toTopOf="@+id/imageViewFormal5" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,6 +7,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.example.bottombarnavigation.Cosmetic.CosmeticMenu
+import com.example.bottombarnavigation.Outfit.OutfitMenu
 import com.example.bottombarnavigation.Slim.SlimMenu
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import kotlinx.android.synthetic.main.activity_main.*
@@ -34,9 +36,8 @@ class MainActivity : AppCompatActivity() {
     private val mOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { menuItem ->
         when (menuItem.itemId) {
             R.id.navigation_outfit -> {
-                val fragment = OutfitFragment()
-                supportFragmentManager.beginTransaction().replace(R.id.container, fragment, fragment.javaClass.getSimpleName())
-                    .commit()
+                val intent : Intent = Intent(this,OutfitMenu::class.java)
+                startActivity(intent)
                 return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_fitness -> {
@@ -51,9 +52,8 @@ class MainActivity : AppCompatActivity() {
                 return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_cosmetic -> {
-                val fragment = CosmeticFragment()
-                supportFragmentManager.beginTransaction().replace(R.id.container, fragment, fragment.javaClass.getSimpleName())
-                    .commit()
+                val intent : Intent = Intent(this, CosmeticMenu::class.java)
+                startActivity(intent)
                 return@OnNavigationItemSelectedListener true
             }
         }
@@ -65,8 +65,8 @@ class MainActivity : AppCompatActivity() {
             inflater.inflate(R.layout.fragment, container, false)
         override fun onActivityCreated(savedInstanceState: Bundle?) {
             super.onActivityCreated(savedInstanceState)
-            textViewCommon.text = "Outfit Fragment"
-            commonLayout.setBackgroundColor(resources.getColor(android.R.color.holo_orange_dark))
+            textViewCommon.text = "Please select an option at bottom bar."
+            commonLayout.setBackgroundColor(resources.getColor(android.R.color.darker_gray))
         }
     }
 
