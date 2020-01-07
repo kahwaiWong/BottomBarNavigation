@@ -24,7 +24,7 @@
             <ImageButton
                 android:id="@+id/imageButton_task"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="231dp"
                 app:srcCompat="@drawable/task" />
 
             <TextView
@@ -47,8 +47,8 @@
 
             <ImageView
                 android:id="@+id/imageViewExecise"
-                android:layout_width="361dp"
-                android:layout_height="200dp"
+                android:layout_width="411dp"
+                android:layout_height="295dp"
                 android:adjustViewBounds="true"
                 android:contentDescription="@string/exercise"
                 app:srcCompat="@drawable/exercise" />
@@ -69,27 +69,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="8dp">
-
-
-            <ImageView
-                android:id="@+id/imageViewDiet"
-                android:layout_width="348dp"
-                android:layout_height="200dp"
-                android:adjustViewBounds="true"
-                android:contentDescription="@string/diet"
-                app:srcCompat="@drawable/diet" />
-
-            <TextView
-                android:id="@+id/txtActivityDiet"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:padding="1dp"
-                android:text="@string/diet"
-                android:textSize="25sp" />
-
-        </LinearLayout>
+            android:padding="8dp"/>
 
     </LinearLayout>
 </ScrollView>

@@ -4,6 +4,8 @@
     <string name="fitness">Fitness</string>
     <string name="skincare">Skin Care</string>
     <string name="cosmetic">Cosmetic</string>
+
+    <!--Lau Chih Kei!-->
     <string name="daily_task">Daily Tasks</string>
     <string name="diet">Diet</string>
     <string name="exercise">Exercise</string>
@@ -17,4 +19,36 @@
     <string name="task6">Limit high fat, highly processed foods</string>
     <string name="task7">Ensure regular exercise every day</string>
     <string name="task8">Increase your baseline activity level</string>
+
+
+    <string name="exercise_1">Walking Lunge</string>
+    <string name="exercise_1_desc">Stand with feet hip-width apart. Step forward with right foot, bending both knees to 90 degrees.
+        Drive through right heel to stand, while stepping left foot forward and dropping into a lunge on the left side.
+        Continue walking forward, making sure back knee hovers just off the floor with each step.
+        You can perform this move with body weight or holding two dumbbells or kettlebells for an added challenge.
+        Do 10 to 15 reps per side.</string>
+
+
+    <string name="exercise_2">Backward Lunge</string>
+    <string name="exercise_2_desc">Stand with feet together.
+        Step right leg back, lowering down so both knees form a 90-degree angle, with right knee hovering just above the floor.
+        Drive through left heel to stand up to starting position. Repeat on left side.
+        Continue alternating for 10 to 15 reps per side.</string>
+
+    <string name="exercise_3">Air Squat</string>
+    <string name="exercise_3_desc">Start standing with feet just wider than hip-width apart, toes pointed slightly out,
+        clasp hands at chest for balance. Send hips back and bend at knees to lower down as far as possible with chest lifted.
+        Press through heels back up to starting position. Repeat for 10 to 15 reps.</string>
+    <string name="exercise_4">Shoulder Bridge</string>
+    <string name="exercise_4_desc">Lie faceup, knees bent, feet planted on floor. Place arms down by sides.
+        Contract glutes and lift hips toward ceiling as high as possible you draw hands together below.
+        Lower back down and repeat for 10 to 15 reps.11 OF 30
+    </string>
+
+    <string name="exercise_15minutes">15 Minutes</string>
+    <string name="exercise_30minutes">30 Minutes</string>
+    <string name="exercise_45minutes">45 Minutes</string>
+    <string name="exercise_60minutes">60 Minutes</string>
+
+    <string name="start">Start</string>
 </resources>

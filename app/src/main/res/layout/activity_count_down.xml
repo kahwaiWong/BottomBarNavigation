@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Slim.CountDown">
+
+    <TextView
+        android:id="@+id/txt_countDownTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Countdown Exercise"
+        android:textColor="#FF0000"
+        android:textSize="30dp"
+        android:textStyle="bold"></TextView>
+
+    <Button
+        android:id="@+id/button_start"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_countDownTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/start" />
+
+    <Button
+        android:id="@+id/button_restart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_stop"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:width="200dp"
+        android:text="Restart" />
+
+    <Button
+        android:id="@+id/button_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_start"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:width="200dp"
+        android:text="Stop" />
+
+    <Chronometer
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/simpleChronometer"
+        android:layout_below="@id/button_restart"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="#000"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textColor="#f00"
+        android:textStyle="bold"></Chronometer>
+
+
+</RelativeLayout>

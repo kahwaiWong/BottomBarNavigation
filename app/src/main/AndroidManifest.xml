@@ -9,7 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Slim.SlimMenu"></activity>
+        <activity android:name=".Slim.CountDown"></activity>
+        <activity android:name=".Slim.Shoulder_bridge" />
+        <activity android:name=".Slim.Walking_lunge" />
+        <activity android:name=".Slim.Backward_lunge" />
+        <activity android:name=".Slim.Air_squat" />
+        <activity android:name=".Slim.Exercises" />
+        <activity android:name=".Slim.DailyTask" />
+        <activity android:name=".Slim.SlimMenu" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
