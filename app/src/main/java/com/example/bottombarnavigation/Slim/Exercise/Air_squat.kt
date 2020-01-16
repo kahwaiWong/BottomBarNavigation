@@ -48,5 +48,8 @@ class Air_squat : AppCompatActivity() {
         }
 
 
+
+
     }
+
 }

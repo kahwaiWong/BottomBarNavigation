@@ -42,5 +42,9 @@ class Shoulder_bridge : AppCompatActivity() {
             intent.putExtra("duration" , "60")
             startActivity(intent)
         }
+
+
     }
+
+
 }
