@@ -32,23 +32,27 @@ class Exercise : Fragment() {
 
         button_exercise_start1.setOnClickListener {
             val intent: Intent = Intent(activity, Walking_lunge::class.java)
+            intent.putExtra("exercise" , "Walking Lunge")
             startActivity(intent)
 
         }
 
         button_exercise_start2.setOnClickListener {
             val intent: Intent = Intent(activity, Backward_lunge::class.java)
+            intent.putExtra("exercise" , "Backward Lunge")
             startActivity(intent)
 
         }
 
         button_exercise_start3.setOnClickListener {
             val intent: Intent = Intent(activity, Air_squat::class.java)
+            intent.putExtra("exercise" , "Air Squat")
             startActivity(intent)
 
         }
         button_exercise_start4.setOnClickListener {
             val intent: Intent = Intent(activity, Shoulder_bridge::class.java)
+            intent.putExtra("exercise" , "Shoulder Bridge")
             startActivity(intent)
 
         }

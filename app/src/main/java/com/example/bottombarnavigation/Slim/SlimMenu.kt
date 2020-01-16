@@ -29,7 +29,7 @@ class SlimMenu : AppCompatActivity() {
         var  pageAdapter = PageAdapter(supportFragmentManager)
         pageAdapter.addFragment(Task(), "Daily Task")
         pageAdapter.addFragment(Exercise(), "Exercise")
-        pageAdapter.addFragment(Diet(), "Diet")
+        //pageAdapter.addFragment(Diet(), "Diet")
 
 
         viewPager.adapter = pageAdapter
@@ -53,12 +53,7 @@ class SlimMenu : AppCompatActivity() {
                         tabLayout.setBackgroundColor(Color.GREEN)
                     }
 
-                    2 -> {
-                        window.statusBarColor = Color.BLUE
-                        toolbar.setBackgroundColor(Color.BLUE)
-                        toolbarTab.setBackgroundColor(Color.BLUE)
-                        tabLayout.setBackgroundColor(Color.BLUE)
-                    }
+
                 }
             }
 

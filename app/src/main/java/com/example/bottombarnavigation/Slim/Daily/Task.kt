@@ -1,24 +1,26 @@
 package com.example.bottombarnavigation.Slim.Daily
 
 
+import android.content.Intent
 import android.os.Bundle
-import androidx.fragment.app.Fragment
-
 import android.view.LayoutInflater
-import android.view.Menu
-import android.view.MenuInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
-
+import androidx.fragment.app.Fragment
 import com.example.bottombarnavigation.R
+import com.example.bottombarnavigation.Slim.Daily.History.TaskHistory
 import kotlinx.android.synthetic.main.activity_daily_task.*
+import java.time.LocalDateTime
 
 
 /**
  * A simple [Fragment] subclass.
  */
 class Task : Fragment() {
+
+    var noTask : Int = 0
+    var mark : Double = 0.0
+
 
 
     override fun onCreateView(
@@ -35,46 +37,70 @@ class Task : Fragment() {
 
         check()
 
+
+    }
+
+
+    fun saveRecord(){
+
+        val dateTime = LocalDateTime.now()
+        val date = dateTime.toString()
+        val noTask  = noTask.toString()
+        val mark = mark.toString()
+
+
+        val intent = Intent(activity, TaskHistory::class.java)
+
+        intent.putExtra("date",date)
+        intent.putExtra("noTask" , noTask)
+        intent.putExtra("mark" , mark)
+        //start the second activity
+        startActivity(intent)
+
+
+
+
     }
 
     fun check(){
 
-        var mark : Int = 0
+
 
         checkBox_done1.setOnCheckedChangeListener { buttonView, isChecked ->
             if(checkBox_done1.isChecked){
-                mark = mark + 1
+                noTask = noTask + 1
             }
         }
 
         checkBox_done2.setOnCheckedChangeListener { buttonView, isChecked ->
             if(checkBox_done2.isChecked){
-                mark = mark + 1
+                noTask = noTask + 1
             }
         }
 
         checkBox_done3.setOnCheckedChangeListener { buttonView, isChecked ->
             if(checkBox_done3.isChecked){
-                mark = mark + 1
+                noTask = noTask + 1
             }
         }
 
         checkBox_done4.setOnCheckedChangeListener { buttonView, isChecked ->
             if(checkBox_done4.isChecked){
-                mark = mark + 1
+                noTask = noTask + 1
             }
         }
 
         checkBox_done5.setOnCheckedChangeListener { buttonView, isChecked ->
             if(checkBox_done5.isChecked){
-                mark = mark + 1
+                noTask = noTask + 1
             }
         }
 
 
         button_done.setOnClickListener {
-            Toast.makeText(getActivity(),"Total mark is " + mark.toString() , Toast.LENGTH_SHORT ).show()
 
+            mark = noTask * 12.5
+            saveRecord()
         }
 
     }

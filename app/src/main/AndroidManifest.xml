@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Slim.menu.Slim"></activity>
+        <activity android:name=".Slim.Exercise.History.ExerciseList"></activity>
+        <activity android:name=".Slim.Exercise.History.ExerciseHistory" />
+        <activity android:name=".Slim.Daily.ListAdapter" />
+        <activity android:name=".Slim.Daily.History.TaskList" />
+        <activity android:name=".Slim.Daily.History.TaskHistory" />
+        <activity android:name=".Slim.menu.Slim" />
         <activity
             android:name=".TestFragment.TabbedSlim"
             android:label="@string/title_activity_tabbed_slim"
