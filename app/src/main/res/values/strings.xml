@@ -99,5 +99,11 @@
     Please scroll left to view more dinner outfit...</string>
     <string name="formalDesc">The OOTD of youngs.\n
     Please scroll left to view more formal outfit...</string>
+    <string name="title_activity_tabbed_slim">TabbedSlim</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

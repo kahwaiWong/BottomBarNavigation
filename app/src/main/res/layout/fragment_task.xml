@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_marginLeft="5dp"
+    android:layout_height="match_parent"
+    tools:context=".Slim.Daily.Task">
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="202dp"
+        app:srcCompat="@drawable/task" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <TextView
+                android:id="@+id/txt_task7"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="@string/task7"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_task6" />
+
+            <TextView
+                android:id="@+id/txt_task8"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="@string/task8"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_task7" />
+
+            <TextView
+                android:id="@+id/txt_task1"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="@string/task1"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_task2"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="@string/task2"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_task1" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="350dp" />
+
+            <TextView
+                android:id="@+id/txt_task5"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="@string/task5"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_task4" />
+
+            <TextView
+                android:id="@+id/txt_task4"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="@string/task4"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView_task3" />
+
+            <TextView
+                android:id="@+id/txt_task6"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="@string/task6"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_task5" />
+
+            <CheckBox
+                android:id="@+id/checkBox_done1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text=""
+                android:textColorLink="@android:color/holo_red_light"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/txt_task1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <CheckBox
+                android:id="@+id/checkBox_done2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text=""
+                android:textColorLink="@android:color/holo_red_light"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/txt_task1"
+                app:layout_constraintTop_toBottomOf="@+id/checkBox_done1" />
+
+            <CheckBox
+                android:id="@+id/checkBox_done3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text=""
+                android:textColorLink="@android:color/holo_red_light"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline2"
+                app:layout_constraintTop_toBottomOf="@+id/checkBox_done2" />
+
+            <CheckBox
+                android:id="@+id/checkBox_done4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text=""
+                android:textColorLink="@android:color/holo_red_light"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline2"
+                app:layout_constraintTop_toBottomOf="@+id/checkBox_done3" />
+
+            <CheckBox
+                android:id="@+id/checkBox_done7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text=""
+                android:textColorLink="@android:color/holo_red_light"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline2"
+                app:layout_constraintTop_toBottomOf="@+id/checkBox_done6" />
+
+            <CheckBox
+                android:id="@+id/checkBox_done6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text=""
+                android:textColorLink="@android:color/holo_red_light"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline2"
+                app:layout_constraintTop_toBottomOf="@+id/checkBox_done5" />
+
+            <CheckBox
+                android:id="@+id/checkBox_done5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text=""
+                android:textColorLink="@android:color/holo_red_light"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline2"
+                app:layout_constraintTop_toBottomOf="@+id/checkBox_done4" />
+
+            <CheckBox
+                android:id="@+id/checkBox_done8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text=""
+                android:textColorLink="@android:color/holo_red_light"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/txt_task8"
+                app:layout_constraintTop_toBottomOf="@+id/checkBox_done7" />
+
+            <TextView
+                android:id="@+id/textView_task3"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="@string/task3"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_task2" />
+
+            <Button
+                android:id="@+id/button_done"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/holo_red_light"
+                android:text="@string/done"
+                android:textColor="@android:color/background_dark"
+                app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_task8" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>
