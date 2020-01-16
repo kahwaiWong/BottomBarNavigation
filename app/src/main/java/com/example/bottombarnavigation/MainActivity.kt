@@ -80,6 +80,7 @@ class MainActivity : AppCompatActivity() {
             commonLayout.setBackgroundColor(resources.getColor(android.R.color.holo_green_light))
 
         }
+
     }
 
 

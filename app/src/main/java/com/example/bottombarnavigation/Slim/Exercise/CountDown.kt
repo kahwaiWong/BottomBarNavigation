@@ -1,4 +1,4 @@
-package com.example.bottombarnavigation.Slim
+package com.example.bottombarnavigation.Slim.Exercise
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

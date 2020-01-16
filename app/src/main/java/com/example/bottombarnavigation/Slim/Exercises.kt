@@ -4,6 +4,10 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.bottombarnavigation.R
+import com.example.bottombarnavigation.Slim.Exercise.Air_squat
+import com.example.bottombarnavigation.Slim.Exercise.Backward_lunge
+import com.example.bottombarnavigation.Slim.Exercise.Shoulder_bridge
+import com.example.bottombarnavigation.Slim.Exercise.Walking_lunge
 import kotlinx.android.synthetic.main.activity_exercises.*
 
 class Exercises : AppCompatActivity() {

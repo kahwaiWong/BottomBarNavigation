@@ -27,11 +27,11 @@
         <activity android:name=".Cosmetic.DisplayEyesMenuActivity" />
         <activity android:name=".Cosmetic.DisplayLipMenuActivity" />
         <activity android:name=".Cosmetic.DisplayFoundationMenuActivity" />
-        <activity android:name=".Slim.CountDown" />
-        <activity android:name=".Slim.Shoulder_bridge" />
-        <activity android:name=".Slim.Walking_lunge" />
-        <activity android:name=".Slim.Backward_lunge" />
-        <activity android:name=".Slim.Air_squat" />
+        <activity android:name=".Slim.Exercise.CountDown" />
+        <activity android:name=".Slim.Exercise.Shoulder_bridge" />
+        <activity android:name=".Slim.Exercise.Walking_lunge" />
+        <activity android:name=".Slim.Exercise.Backward_lunge" />
+        <activity android:name=".Slim.Exercise.Air_squat" />
         <activity android:name=".Slim.Exercises" />
         <activity android:name=".Slim.DailyTask" />
         <activity android:name=".Slim.SlimMenu" />
