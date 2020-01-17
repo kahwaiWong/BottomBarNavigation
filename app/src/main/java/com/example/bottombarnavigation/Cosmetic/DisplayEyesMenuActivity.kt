@@ -15,6 +15,6 @@ class DisplayEyesMenuActivity: AppCompatActivity() {
     }
 
     private fun showEyesMenu1Detail() {
-        setContentView(R.layout.activity_display_eyedetail)
+        setContentView(R.layout.custom_list)
     }
 }

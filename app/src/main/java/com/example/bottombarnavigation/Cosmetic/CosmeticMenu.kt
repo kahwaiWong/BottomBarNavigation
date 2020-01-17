@@ -27,6 +27,11 @@ class CosmeticMenu : AppCompatActivity(), View.OnClickListener {
             Toast.makeText(this, "Foundation selected", Toast.LENGTH_SHORT).show()
             onClick(button3) }
 
+        val imageEyes = ArrayList<Eyes>()
+        imageEyes.add(Eyes(R.drawable.eye1detail,"Eye product 1"))
+
+        val eyesAdapter = EyesAdapter(this,imageEyes)
+
     }
 
     override fun onClick(v: View?) {
