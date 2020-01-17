@@ -1,14 +1,19 @@
 package com.example.bottombarnavigation.Cosmetic
 
 import android.content.Intent
+import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.ImageView
 import android.widget.Toast
+import android.widget.LinearLayout
+import android.widget.ListView
 import com.example.bottombarnavigation.R
+import kotlinx.android.synthetic.main.activity_cosmetic_menu.*
+import kotlinx.android.synthetic.main.activity_eyes_main.*
 
-class CosmeticMenu : AppCompatActivity(), View.OnClickListener {
+class CosmeticMenu : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -17,6 +22,12 @@ class CosmeticMenu : AppCompatActivity(), View.OnClickListener {
         val button1 = findViewById<ImageView>(R.id.imageViewLip)
         val button2 = findViewById<ImageView>(R.id.imageViewEyes)
         val button3 = findViewById<ImageView>(R.id.imageViewFoundation)
+
+        imageViewLip.setOnClickListener {
+            val intent = Intent(this, DisplayLipMenuActivity::class.java)
+               startActivity(intent)
+        }
+
         button1.setOnClickListener {
             Toast.makeText(this, "Lip selected", Toast.LENGTH_SHORT).show()
             onClick(button1) }
@@ -27,14 +38,9 @@ class CosmeticMenu : AppCompatActivity(), View.OnClickListener {
             Toast.makeText(this, "Foundation selected", Toast.LENGTH_SHORT).show()
             onClick(button3) }
 
-        val imageEyes = ArrayList<Eyes>()
-        imageEyes.add(Eyes(R.drawable.eye1detail,"Eye product 1"))
-
-        val eyesAdapter = EyesAdapter(this,imageEyes)
-
     }
 
-    override fun onClick(v: View?) {
+    fun onClick(v: View?) {
         when(v?.id) {
             R.id.imageViewEyes -> {
                 val intent = Intent(this, DisplayEyesMenuActivity::class.java)

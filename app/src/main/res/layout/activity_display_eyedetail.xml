@@ -21,7 +21,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageViewEyeDetail1"
+        android:id="@+id/imageViewFoundationDetail1"
         android:layout_width="@dimen/width"
         android:layout_height="@dimen/height"
         android:layout_marginTop="50dp"
@@ -51,7 +51,7 @@
         android:layout_marginRight="32dp"
         android:clickable="true"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageViewEyeDetail1"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewFoundationDetail1"
         app:srcCompat="@drawable/icon_fav" />
 
     <TextView
@@ -64,6 +64,6 @@
         android:text="@string/eye1Detail"
         app:layout_constraintEnd_toStartOf="@+id/imageButtonLike"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageViewEyeDetail1" />
+        app:layout_constraintTop_toBottomOf="@+id/imageViewFoundationDetail1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

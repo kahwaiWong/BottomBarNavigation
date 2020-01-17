@@ -6,26 +6,23 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.ImageView
+import android.widget.ListView
 import android.widget.TextView
-import androidx.recyclerview.widget.RecyclerView
 import com.example.bottombarnavigation.R
-import java.util.ArrayList
 
-class EyesAdapter(private val context: Activity, val imageList: ArrayList<Eyes>)
-    : ArrayAdapter<String>(context, R.layout.custom_list){
-
-    class OutfitViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-
-        fun bindItems(outfit: Outfit) {
-            itemView.imageViewCasual.setImageResource(outfit.image)
-        }
-    }
+class EyesAdapter (private val context: Activity, private val imgid: Array<Int>, private val imgname: Array<String>)
+    :ArrayAdapter<String>(context,R.layout.custom_list,imgname){
 
     override fun getView(position: Int, view: View?, parent: ViewGroup): View {
         val inflater = context.layoutInflater
-        val rowView = inflater.inflate(R.layout.custom_list,null,true)
+        val rowView = inflater.inflate(R.layout.custom_list,parent,false)
+
+        val imageView = rowView.findViewById(R.id.icon) as ImageView
+        val subtitleText = rowView.findViewById(R.id.name) as TextView
+
+        imageView.setImageResource(imgid[position])
+        subtitleText.text = imgname[position]
 
         return rowView
     }
-
 }
